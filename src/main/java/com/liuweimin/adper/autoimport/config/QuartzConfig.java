@@ -1,6 +1,6 @@
 package com.liuweimin.adper.autoimport.config;
 
-import com.liuweimin.adper.autoimport.job.AutoImportJob;
+import com.liuweimin.adper.autoimport.job.AutoLearnJob;
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -20,7 +20,7 @@ public class QuartzConfig {
 
     @Bean
     public JobDetail teatQuartzDetail() {
-        return JobBuilder.newJob(AutoImportJob.class).withIdentity("testQuartz").storeDurably().build();
+        return JobBuilder.newJob(AutoLearnJob.class).withIdentity("testQuartz").storeDurably().build();
     }
 
     @Bean
