@@ -34,13 +34,15 @@ public class LearnHttpHelper {
                 .addHeader("Connection", "keep-alive")
                 .addHeader("Accept", "application/json, text/javascript, */*; q=0.01")
                 .addHeader("X-Requested-With", "XMLHttpRequest")
+                .addHeader("Origin", "http://zjzx2017.study.teacheredu.cn")
                 .addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36")
                 .addHeader("Content-Type", "application/x-www-form-urlencoded")
-                .addHeader("Origin", "http://study.teacheredu.cn")
+                .addHeader("Referer", "http://zjzx2017.study.teacheredu.cn/proj/studentwork/study.htm?courseId="+courseId+"&ptcode=34101&stageId=0")
                 .addHeader("Accept-Encoding", "gzip, deflate")
                 .addHeader("Accept-Language", "zh-CN,zh;q=0.9")
                 .addHeader("Cookie", cookies)
                 .addHeader("cache-control", "no-cache")
+                .addHeader("Postman-Token", "c5619e08-3efc-499b-9d94-ab9f6c163c8e")
                 .build();
         try {
             Response response = client.newCall(request).execute();

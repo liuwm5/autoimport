@@ -8,5 +8,5 @@ package com.liuweimin.adper.autoimport.constants;
  */
 public class LearnConstants {
 
-    public static final String ADDSTUDYTIME_URL="http://study.teacheredu.cn/proj/studentwork/studyAjax/AddStudyTime.json";
+    public static final String ADDSTUDYTIME_URL="http://zjzx2017.study.teacheredu.cn/proj/studentwork/studyAjax/AddStudyTime.json";
 }

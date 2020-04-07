@@ -31,4 +31,6 @@ public class AutoimportApplicationTests {
         mailService.sendTextMailService(subject, content, "liuwm@lianlianpay.com");
     }
 
+
+
 }
